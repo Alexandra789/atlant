@@ -1,0 +1,65 @@
+html {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+
+}
+
+*, *::after, *::before {
+	box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'MyriadPro', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: $black;
+	background: $white;
+}
+
+a, button {
+	transition: all .3s;
+}
+
+a {
+	text-decoration: none;
+	color: $white;
+}
+
+ul {
+	list-style-type: none;
+}
+
+img {
+	width: 100%;
+	display: block;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container {
+	padding: 0 15px;
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.btn {
+	background: none;
+	outline: none;
+	cursor: pointer;
+	font-family: 'MyriadPro', sans-serif;
+	color: $white;
+	font-weight: 600;
+	border-radius: 30px;
+}
