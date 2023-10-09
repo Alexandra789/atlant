@@ -1,2 +1,125 @@
 .hamburger {
+	display: none;
+	align-items: center;
+	margin-left: auto;
+
+	&__btn {
+		display: none;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		position: relative;
+		z-index: 11;
+	}
+
+	&__menu {
+		display: none;
+	}
+
+	.bar {
+		display: block;
+		width: 40px;
+		height: 4px;
+		-webkit-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+		background-color: $black;
+	}
+
+	@media (max-width: 1200px) {
+		display: flex;
+
+		.header__buy {
+			display: inline-block;
+			font-size: 40px;
+			padding: 16px 32px;
+			@media (max-width: 576px) {
+				font-size: 32px;
+			}
+		}
+
+		.hamburger__btn {
+			display: flex;
+			height: 30px;
+			flex-direction: column;
+			justify-content: space-between;
+
+			&.active .bar:nth-child(2) {
+				opacity: 0;
+			}
+
+			&.active .bar:nth-child(1) {
+				transform: translateY(15px) rotate(45deg);
+			}
+
+			&.active .bar:nth-child(3) {
+				transform: translateY(-12px) rotate(-45deg);
+			}
+		}
+
+		.hamburger__menu {
+			position: fixed;
+			right: -100%;
+			top: 0;
+			width: 100%;
+			min-height: 100vh;
+			text-align: center;
+			transition: 0.6s ease;
+			z-index: 10;
+			background-color: $gray;
+			height: 100%;
+			padding: 0 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&.active {
+				right: 0;
+			}
+
+			.menu {
+				display: block;
+				width: 100%;
+
+				&__list {
+					display: flex;
+					flex-direction: column;
+					gap: 64px 0;
+					margin-bottom: 64px;
+					@media (max-width: 576px) {
+						gap: 32px 0;
+						margin-bottom: 32px;
+					}
+
+					&-link {
+						height: auto;
+						max-width: none;
+						color: $black;
+						font-size: 40px;
+						display: inline-block;
+
+						&:hover {
+							background-color: inherit;
+						}
+
+						&:after {
+							content: "";
+							display: block;
+							width: 0;
+							height: 4px;
+							background-color: $orange;
+							transition: width .3s ease-in 0s;
+						}
+
+						&:hover:after {
+							width: 100%;
+						}
+
+						@media (max-width: 576px) {
+							font-size: 32px;
+						}
+					}
+				}
+			}
+		}
+	}
 }

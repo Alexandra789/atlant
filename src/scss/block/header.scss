@@ -1,2 +1,71 @@
 .header {
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 32px;
+		@media (max-width: 1200px) {
+			padding: 24px 0;
+		}
+
+		.logo {
+			&__img {
+				width: 224px;
+				height: 77px;
+			}
+		}
+
+		.menu {
+			max-width: 928px;
+			width: 100%;
+			@media (max-width: 1200px) {
+				display: none;
+			}
+
+			&__list {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 2px;
+
+				&-item {
+					width: 100%;
+				}
+
+				&-link {
+					max-width: 308px;
+					height: 134px;
+					padding: 0 16px;
+					font-size: 24px;
+					background-color: $gray;
+					transition: all 0.3s ease;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+
+					&:hover {
+						cursor: pointer;
+						background-color: $orange;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+
+	&__buy {
+		background-color: $blue;
+		min-width: 220px;
+		padding: 16px;
+		font-size: 24px;
+
+		&:hover {
+			background-color: $orange;
+		}
+
+		@media (max-width: 1200px) {
+			display: none;
+		}
+	}
 }
