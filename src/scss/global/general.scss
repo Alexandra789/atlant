@@ -33,7 +33,7 @@ a, button {
 
 a {
 	text-decoration: none;
-	color: $white;
+	color: inherit;
 }
 
 ul {
@@ -49,7 +49,7 @@ img {
 
 .container {
 	padding: 0 15px;
-	max-width: 1280px;
+	max-width: 1525px;
 	width: 100%;
 	margin: 0 auto;
 }
