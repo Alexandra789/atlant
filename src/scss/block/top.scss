@@ -1,0 +1,137 @@
+.top {
+	position: relative;
+
+	&__inner {
+		position: relative;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: flex-end;
+		@media (max-width: 576px) {
+			justify-content: center;
+		}
+	}
+
+	&__bg-img {
+		position: absolute;
+		z-index: 1;
+		@media (max-width: 576px) {
+			position: initial;
+		}
+	}
+
+	&-info {
+		position: relative;
+		z-index: 2;
+		max-width: 610px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		text-align: end;
+
+		padding-top: 186px;
+		padding-bottom: 296px;
+
+		@media (max-width: 1200px) {
+			padding: 50px 0;
+		}
+		@media (max-width: 768px) {
+			padding: 30px 0;
+		}
+		@media (max-width: 576px) {
+			text-align: center;
+			max-width: 400px;
+			align-items: center;
+		}
+
+		&__new {
+			text-transform: uppercase;
+			background-color: $orange;
+			font-size: 39px;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+			color: $white;
+			display: inline-block;
+			min-width: 267px;
+			padding: 20px 15px;
+			text-align: center;
+			margin-bottom: 63px;
+			@media (max-width: 1080px) {
+				margin-bottom: 25px;
+				font-size: 24px;
+				min-width: 220px;
+			}
+			@media (max-width: 768px) {
+				font-size: 20px;
+				margin-bottom: 20px;
+			}
+			@media (max-width: 576px) {
+				font-size: 13px;
+				min-width: 160px;
+				margin-bottom: 12px;
+			}
+		}
+
+		&__description {
+			font-size: 36px;
+			margin-bottom: 15px;
+			@media (max-width: 1080px) {
+				font-size: 21px;
+			}
+			@media (max-width: 768px) {
+				font-size: 18px;
+			}
+			@media (max-width: 576px) {
+				font-size: 14px;
+				max-width: 250px;
+				margin-bottom: 10px;
+
+				br {
+					display: none;
+				}
+			}
+
+			span {
+				text-transform: uppercase;
+			}
+		}
+
+		&__title {
+			font-size: 85px;
+			font-family: 'MullerBold', sans-serif;
+			font-weight: 400;
+			text-transform: capitalize;
+			margin-bottom: 59px;
+			@media (max-width: 1080px) {
+				margin-bottom: 20px;
+				font-size: 70px;
+			}
+			@media (max-width: 768px) {
+				font-size: 55px;
+				margin-bottom: 12px;
+			}
+			@media (max-width: 576px) {
+				font-size: 40px;
+				margin-bottom: 10px;
+			}
+		}
+
+		&__subtitle {
+			font-weight: 400;
+			font-style: italic;
+			font-size: 48px;
+			text-transform: uppercase;
+			@media (max-width: 1080px) {
+				font-size: 33px;
+			}
+			@media (max-width: 768px) {
+				font-size: 25px;
+			}
+			@media (max-width: 576px) {
+				font-size: 18px;
+			}
+		}
+	}
+}
