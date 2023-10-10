@@ -26,9 +26,6 @@
 		@media (max-width: 768px) {
 			margin-bottom: 32px;
 		}
-		@media (max-width: 576px) {
-			margin-bottom: 24px;
-		}
 
 		.option {
 			max-width: 625px;
@@ -116,6 +113,9 @@
 
 		&__text {
 			margin: 34px 0;
+			@media (max-width: 576px) {
+				margin-top: 24px;
+			}
 		}
 	}
 
