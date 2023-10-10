@@ -59,8 +59,8 @@ img {
 	max-width: 1525px;
 	width: 100%;
 	margin: 0 auto;
-	@media (max-width: 1200px) {
-		padding: 0 50px 0 15px;
+	@media (max-width: 1475px) {
+		padding: 0 50px 0 50px;
 	}
 	@media (max-width: 1080px) {
 		padding: 0 15px;
@@ -72,7 +72,7 @@ img {
 	text-transform: uppercase;
 	font-style: italic;
 	font-weight: 600;
-	@media (max-width: 1485px) {
+	@media (max-width: 1475px) {
 		font-size: 45px;
 	}
 	@media (max-width: 768px) {
@@ -87,7 +87,7 @@ img {
 	font-size: 45px;
 	font-weight: 700;
 	text-transform: uppercase;
-	@media (max-width: 1485px) {
+	@media (max-width: 1475px) {
 		font-size: 35px;
 	}
 	@media (max-width: 768px) {
@@ -100,7 +100,7 @@ img {
 
 .text {
 	font-size: 27px;
-	@media (max-width: 1485px) {
+	@media (max-width: 1475px) {
 		font-size: 24px;
 	}
 	@media (max-width: 768px) {
