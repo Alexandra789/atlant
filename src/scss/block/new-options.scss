@@ -11,11 +11,11 @@
 
 	&__wrapper {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		gap: 45px;
 		margin-bottom: 80px;
 		justify-content: flex-start;
-		@media (max-width: 1475px) {
+		@media (max-width: 1485px) {
 			justify-content: center;
 		}
 		@media (max-width: 960px) {
@@ -46,11 +46,11 @@
 			&__icon {
 				width: 150px;
 				height: 154px;
-				margin-right: 53px;
+				margin-right: 50px;
 				@media (max-width: 1525px) {
 					margin-right: 32px;
 				}
-				@media (max-width: 1475px) {
+				@media (max-width: 1485px) {
 					margin-right: 16px;
 					width: 100px;
 					height: 104px;
@@ -85,7 +85,7 @@
 
 			&__title {
 				margin-bottom: 35px;
-				@media (max-width: 1475px) {
+				@media (max-width: 1485px) {
 					margin-bottom: 24px;
 				}
 				@media (max-width: 960px) {
