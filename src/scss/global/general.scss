@@ -55,15 +55,59 @@ img {
 }
 
 .s-container {
-	padding: 0 130px 0 135px;
+	padding: 0 135px 0 140px;
 	max-width: 1525px;
 	width: 100%;
 	margin: 0 auto;
-	@media (max-width: 1350px) {
+	@media (max-width: 1200px) {
 		padding: 0 50px 0 15px;
 	}
 	@media (max-width: 1080px) {
 		padding: 0 15px;
+	}
+}
+
+.section-title {
+	font-size: 55px;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: 600;
+	@media (max-width: 1485px) {
+		font-size: 45px;
+	}
+	@media (max-width: 768px) {
+		font-size: 30px;
+	}
+	@media (max-width: 645px) {
+		font-size: 24px;
+	}
+}
+
+.m-title {
+	font-size: 45px;
+	font-weight: 700;
+	text-transform: uppercase;
+	@media (max-width: 1485px) {
+		font-size: 35px;
+	}
+	@media (max-width: 768px) {
+		font-size: 24px;
+	}
+	@media (max-width: 576px) {
+		font-size: 18px;
+	}
+}
+
+.text {
+	font-size: 27px;
+	@media (max-width: 1485px) {
+		font-size: 24px;
+	}
+	@media (max-width: 768px) {
+		font-size: 18px;
+	}
+	@media (max-width: 576px) {
+		font-size: 14px;
 	}
 }
 
