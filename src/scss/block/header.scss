@@ -7,6 +7,9 @@
 		@media (max-width: 1200px) {
 			padding: 24px 0;
 		}
+		@media (max-width: 576px) {
+			padding: 16px 0;
+		}
 
 		.logo {
 			&__img {
