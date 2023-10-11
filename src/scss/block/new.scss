@@ -47,8 +47,14 @@
 	}
 
 	&__title {
-		@media (max-width: 884px) {
+		@media (max-width: 884px) and (min-width: 769px) {
 			max-width: 450px;
+		}
+		@media (max-width: 689px) {
+			max-width: 450px;
+		}
+		@media (max-width: 535px) {
+			max-width: 350px;
 		}
 		@media (max-width: 455px) {
 			max-width: 255px;
