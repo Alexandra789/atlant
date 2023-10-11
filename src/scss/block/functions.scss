@@ -5,11 +5,12 @@
 		position: relative;
 	}
 
-	&__title,&__text{
+	&__title, &__text {
 		@media (max-width: 1525px) {
 			width: 100%;
 		}
 	}
+
 	&__img {
 		position: absolute;
 		left: 614px;
