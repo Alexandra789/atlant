@@ -99,7 +99,7 @@
 					flex-direction: column;
 					gap: 64px 0;
 					margin-bottom: 64px;
-					@media (max-width: 576px) {
+					@media (max-height: 700px) {
 						gap: 32px 0;
 						margin-bottom: 32px;
 					}

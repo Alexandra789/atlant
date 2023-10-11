@@ -4,6 +4,9 @@
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	font-size: 17px;
+	@media (max-width: 576px) {
+		font-size: 14px;
+	}
 
 	&__container {
 		max-width: 1864px;
@@ -26,8 +29,10 @@
 			padding-top: 30px;
 			flex-wrap: wrap;
 		}
-		@media (max-width: 1500px) {
+		@media (max-width: 576px) {
+			justify-content: center;
 			align-items: center;
+			gap: 16px;
 		}
 	}
 
@@ -36,7 +41,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			gap: 24px;
+			gap: 16px;
 		}
 
 		.wrapper {
