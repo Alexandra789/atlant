@@ -118,6 +118,10 @@
 
 	&__row-last {
 		min-height: 680px;
+		@media (max-width: 768px) {
+			min-height: 550px;
+			padding-bottom: 40px;
+		}
 	}
 
 	&__row-padding-t-b {
