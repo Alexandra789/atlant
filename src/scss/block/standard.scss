@@ -96,6 +96,7 @@
 			min-height: 220px;
 			@media (max-width: 1485px) {
 				min-height: auto;
+				justify-content: flex-start;
 			}
 
 			&__wrapper-img {
@@ -139,9 +140,6 @@
 				@media (max-width: 576px) {
 					font-size: 16px;
 				}
-			}
-
-			&__text {
 			}
 		}
 	}
