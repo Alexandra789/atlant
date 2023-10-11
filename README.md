@@ -4,4 +4,4 @@ npm install
 
 npm run build
 
-demo: https://6526e581412b24006eb41acf--melodic-beignet-bf2e0e.netlify.app/
+demo: https://652710cf36eeae234c3bfe72--silver-meringue-9c678f.netlify.app/
