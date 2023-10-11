@@ -15,10 +15,10 @@
 			<nav class="menu">
 				<ul class="menu__list">
 					<li class="menu__list-item">
-						<a class="menu__list-link" href="#">Новинка</a>
+						<a class="menu__list-link" href="#new">Новинка</a>
 					</li>
 					<li class="menu__list-item">
-						<a class="menu__list-link" href="#">Опции и функции</a>
+						<a class="menu__list-link" href="#options-and-functions">Опции и функции</a>
 					</li>
 					<li class="menu__list-item">
 						<a class="menu__list-link" href="#">Параметры</a>
@@ -36,10 +36,10 @@
 					<nav class="menu">
 						<ul class="menu__list header__menu-list">
 							<li class="menu__list-item">
-								<a class="menu__list-link" href="#">Новинка</a>
+								<a class="menu__list-link" href="#new">Новинка</a>
 							</li>
 							<li class="menu__list-item">
-								<a class="menu__list-link" href="#">Опции и функции</a>
+								<a class="menu__list-link" href="#options-and-functions">Опции и функции</a>
 							</li>
 							<li class="menu__list-item">
 								<a class="menu__list-link" href="#">Параметры</a>
@@ -53,7 +53,7 @@
 	</div>
 </header>
 <main class="main">
-	<section class="top">
+	<section class="top" id="new">
 		<img class="top__bg-img" src="./assets/images/banner.jpg" alt="background image">
 		<div class="s-container top__inner">
 			<div class="top__content">
@@ -138,7 +138,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="standard">
+	<section class="standard" id="options-and-functions">
 		<div class="container">
 			<div class="standard__inner">
 				<h2 class="standard__title section-title">Стандартные опции и функции</h2>
@@ -340,7 +340,8 @@
 				</div>
 				<div class="copyright">
 					<p class="copyright__title">Copyright </p>
-					<p class="copyright__text">2002-2023 Закрытое акционерное общество <span>“Атлант”</span>  Все  права  защищены.</p>
+					<p class="copyright__text">2002-2023 Закрытое акционерное общество <span>“Атлант”</span> Все права защищены.
+					</p>
 				</div>
 			</div>
 			<div class="footer__contact">
@@ -349,19 +350,19 @@
 				<a href="https://atlant.by/" class="footer__contact-link footer__contact-address">www.atlant.by</a>
 			</div>
 			<div class="footer__navigation">
-				<nav class="footer-menu">
-					<ul class="footer-menu__list">
-						<li class="footer-menu__item">
-							<a href="#" class="footer-menu__link">Новинка</a>
+				<nav class="footer-menu menu">
+					<ul class="footer-menu__list menu__list">
+						<li class="footer-menu__item menu__list-item">
+							<a href="#new" class="footer-menu__link menu__list-link">Новинка</a>
 						</li>
-						<li class="footer-menu__item">
-							<a href="#" class="footer-menu__link">Опции и функции</a>
+						<li class="footer-menu__item menu__list-item">
+							<a href="#options-and-functions" class="footer-menu__link menu__list-link">Опции и функции</a>
 						</li>
-						<li class="footer-menu__item">
-							<a href="#" class="footer-menu__link">Параметры</a>
+						<li class="footer-menu__item menu__list-item">
+							<a href="#" class="footer-menu__link menu__list-link">Параметры</a>
 						</li>
-						<li class="footer-menu__item">
-							<a href="#" class="footer-menu__link">Где купить</a>
+						<li class="footer-menu__item menu__list-item">
+							<a href="#" class="footer-menu__link menu__list-link">Где купить</a>
 						</li>
 					</ul>
 				</nav>
@@ -374,5 +375,7 @@
 		</div>
 	</div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+				crossorigin="anonymous"></script>
 </body>
 </html>
